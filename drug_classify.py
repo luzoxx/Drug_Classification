@@ -18,7 +18,7 @@ def main():
 
     if st.button('Predict'):
         result = model.predict(inputs)
-        updated_res = result.flatten().astype(int)
+        updated_res = result.flatten()
         if updated_res == 'DrugY':
             st.write('Drug Y')
         elif updated_res == 'drugA':
