@@ -4,7 +4,7 @@ import streamlit as st
 import string
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
-model = pickle.load(open('/Users/toan/Working/Python/AI/BTL/drug_classifier.pkl', 'rb'))
+model = pickle.load(open('drug_classifier.pkl', 'rb'))
 
 def main():
     st.sidebar.header("Drug Classification Tool")
