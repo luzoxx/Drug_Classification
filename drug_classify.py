@@ -19,13 +19,13 @@ def main():
     if st.button('Predict'):
         result = model.predict(inputs)
         updated_res = result.flatten().astype(int)
-        if updated_res == 0:
+        if updated_res == 'DrugY':
             st.write('Drug Y')
-        elif updated_res == 1:
+        elif updated_res == 'drugA':
             st.write('Drug A')
-        elif updated_res == 2:
+        elif updated_res == 'drugB':
             st.write('Drug B')
-        elif updated_res == 3:
+        elif updated_res == 'drugC':
             st.write('Drug C')
         else:
             st.write('Drug X')
